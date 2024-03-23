@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assets>
+  <Asset>
+    <Id>1</Id>
+    <InventoryNum>1101</InventoryNum>
+    <AssetName>Верстат токарський</AssetName>
+    <InitialCost>1500</InitialCost>
+    <DepartmentId>1</DepartmentId>
+    <ResponsiblePersonId>1</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>2</Id>
+    <InventoryNum>1102</InventoryNum>
+    <AssetName>Прес гiдравлiчний</AssetName>
+    <InitialCost>2000</InitialCost>
+    <DepartmentId>1</DepartmentId>
+    <ResponsiblePersonId>1</ResponsiblePersonId>
+  </Asset>
+</Assets>

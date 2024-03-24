@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Documents>
+  <Document>
+    <Id>1</Id>
+    <DocumentName>Акт приймання-передачi</DocumentName>
+  </Document>
+  <Document>
+    <Id>2</Id>
+    <DepartmentName>Акт списання основних засобiв</DepartmentName>
+  </Document>
+</Documents>

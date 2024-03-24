@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResponsiblePersons>
+  <ResponsiblePerson>
+    <Id>1</Id>
+    <Name>Iван</Name>
+    <Surname>Петров</Surname>
+    <Phone>+380991234567</Phone>
+  </ResponsiblePerson>
+  <ResponsiblePerson>
+    <Id>2</Id>
+    <Name>Марiя</Name>
+    <Surname>Iванова</Surname>
+    <Phone>+380992345678</Phone>
+  </ResponsiblePerson>
+</ResponsiblePersons>

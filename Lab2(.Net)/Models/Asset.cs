@@ -51,6 +51,11 @@ namespace Lab2_.Net_.Models
 
                 Console.WriteLine("Ведіть назву основного засобу:");
                 assetName = Console.ReadLine();
+                if (assetName == null)
+                {
+                    Console.WriteLine("Некоретно введене значення");
+                    continue;
+                }
 
                 Console.WriteLine("Введіть початкову вартість основного засобу:");
                 if (!decimal.TryParse(Console.ReadLine(), out initialCost) || initialCost <= 0)

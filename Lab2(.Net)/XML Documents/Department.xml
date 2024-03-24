@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Departments>
+  <Department>
+    <Id>1</Id>
+    <DepartmentName>Виробничий пiдроздiл</DepartmentName>
+  </Department>
+  <Department>
+    <Id>2</Id>
+    <DepartmentName>Адмiнiстративний пiдроздiл</DepartmentName>
+  </Department>
+</Departments>

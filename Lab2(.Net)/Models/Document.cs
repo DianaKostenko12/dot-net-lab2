@@ -15,5 +15,26 @@ namespace Lab2_.Net_.Models
             Id = id;
             DocumentName = documentName;
         }
+
+        public static Document CreateDocument()
+        {
+            int documentId;
+            string documentName;
+            do
+            {
+                Console.WriteLine("Введiть ID документу:");
+                if (!int.TryParse(Console.ReadLine(), out documentId) || documentId <= 0)
+                {
+                    Console.WriteLine("Неправильний ID документу. Має бути додатним цілим числом.");
+                    continue;
+                }
+
+                Console.WriteLine("Ведіть назву докумену:");
+                documentName = Console.ReadLine();
+                break;
+            } while (true);
+
+            return new Document(documentId, documentName);
+        }
     }
 }

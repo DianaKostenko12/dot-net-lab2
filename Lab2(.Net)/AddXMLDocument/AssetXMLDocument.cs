@@ -6,14 +6,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace Lab2_.Net_.AddXMLDocument
 {
     public class AssetXMLDocument
     {
-        public AssetXMLDocument() 
-        { 
-           
+        private readonly DataFilling _dataFilling;
+        public AssetXMLDocument(DataFilling dataFilling) 
+        {
+            _dataFilling = dataFilling;
         }
 
         public void CreateXMLDocument(Asset asset)
@@ -65,6 +67,41 @@ namespace Lab2_.Net_.AddXMLDocument
             }
 
             Console.WriteLine("XML елемент успішно доданий");
+        }
+
+        public void AddCollection()
+        {
+            XmlRootAttribute xRoot = new XmlRootAttribute();
+            xRoot.ElementName = "Assets";
+            xRoot.IsNullable = true;
+
+            XmlSerializer formatter = new XmlSerializer(typeof(List<Asset>), xRoot);
+
+            List<Asset> newAssetList = new List<Asset>();
+
+            List<Asset> existingAssets;
+
+            using (FileStream fs = new FileStream("D:\\University\\.Net\\Lab2\\Lab2(.Net)\\Lab2(.Net)\\XML Documents\\Asset.xml", FileMode.OpenOrCreate))
+            {
+                existingAssets = formatter.Deserialize(fs) as List<Asset>;
+            }
+
+            foreach (var asset in _dataFilling.assets)
+            {
+                if (!existingAssets.Any(a => a.Id == asset.Id))
+                {
+                    newAssetList.Add(asset);
+                }
+            }
+
+            if (newAssetList.Count > 0)
+            {
+                using (FileStream fs = new FileStream("D:\\University\\.Net\\Lab2\\Lab2(.Net)\\Lab2(.Net)\\XML Documents\\Asset.xml", FileMode.Create))
+                {
+                    existingAssets.AddRange(newAssetList);
+                    formatter.Serialize(fs, existingAssets);
+                }
+            }
         }
     }
 }

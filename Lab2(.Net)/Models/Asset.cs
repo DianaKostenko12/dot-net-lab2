@@ -26,6 +26,8 @@ namespace Lab2_.Net_.Models
             ResponsiblePersonId = responsiblePersonId;
         }
 
+        public Asset() { }
+         
         public static Asset CreateAsset()
         {
             int assetId, inventoryNumber, departmentId, responsiblePersonId;

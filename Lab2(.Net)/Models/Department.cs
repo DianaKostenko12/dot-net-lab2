@@ -16,6 +16,11 @@ namespace Lab2_.Net_.Models
             DepartmentName = departmentName;
         }
 
+        public Department()
+        {
+            
+        }
+
         public static Department CreateDepartment()
         {
             int departmentId;

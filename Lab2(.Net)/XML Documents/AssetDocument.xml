@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssetDocuments>
+  <AssetDocument>
+    <AssetId>1</AssetId>
+    <DocumentId>1</DocumentId>
+    <Date>15.01.2023 0:00:00</Date>
+  </AssetDocument>
+  <AssetDocument>
+    <AssetId>2</AssetId>
+    <DocumentId>2</DocumentId>
+    <Date>28.02.2023 0:00:00</Date>
+  </AssetDocument>
+</AssetDocuments>

@@ -1,19 +1,145 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Assets>
+<?xml version="1.0" encoding="utf-8"?>
+<Assets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Asset>
     <Id>1</Id>
-    <InventoryNum>1101</InventoryNum>
-    <AssetName>Верстат токарський</AssetName>
     <InitialCost>1500</InitialCost>
     <DepartmentId>1</DepartmentId>
     <ResponsiblePersonId>1</ResponsiblePersonId>
   </Asset>
   <Asset>
     <Id>2</Id>
-    <InventoryNum>1102</InventoryNum>
-    <AssetName>Прес гiдравлiчний</AssetName>
+    <InventoryNumber>1102</InventoryNumber>
+    <Name>Прес гiдравлiчний</Name>
     <InitialCost>2000</InitialCost>
     <DepartmentId>1</DepartmentId>
     <ResponsiblePersonId>1</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>3</Id>
+    <InventoryNumber>1103</InventoryNumber>
+    <Name>Конвеєр лiнiйний</Name>
+    <InitialCost>3000</InitialCost>
+    <DepartmentId>1</DepartmentId>
+    <ResponsiblePersonId>2</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>4</Id>
+    <InventoryNumber>1201</InventoryNumber>
+    <Name>Комп'ютер офiсний</Name>
+    <InitialCost>800</InitialCost>
+    <DepartmentId>2</DepartmentId>
+    <ResponsiblePersonId>2</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>5</Id>
+    <InventoryNumber>1202</InventoryNumber>
+    <Name>Принтер лазерний</Name>
+    <InitialCost>400</InitialCost>
+    <DepartmentId>2</DepartmentId>
+    <ResponsiblePersonId>3</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>6</Id>
+    <InventoryNumber>1203</InventoryNumber>
+    <Name>Сканер документiв</Name>
+    <InitialCost>300</InitialCost>
+    <DepartmentId>2</DepartmentId>
+    <ResponsiblePersonId>3</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>7</Id>
+    <InventoryNumber>1301</InventoryNumber>
+    <Name>Осцилограф цифровий</Name>
+    <InitialCost>1200</InitialCost>
+    <DepartmentId>3</DepartmentId>
+    <ResponsiblePersonId>4</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>8</Id>
+    <InventoryNumber>1302</InventoryNumber>
+    <Name>Тепловiзор FLIR</Name>
+    <InitialCost>2500</InitialCost>
+    <DepartmentId>3</DepartmentId>
+    <ResponsiblePersonId>4</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>9</Id>
+    <InventoryNumber>1303</InventoryNumber>
+    <Name>Лазерний вимiрювач дистанцiї</Name>
+    <InitialCost>150</InitialCost>
+    <DepartmentId>3</DepartmentId>
+    <ResponsiblePersonId>5</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>10</Id>
+    <InventoryNumber>1401</InventoryNumber>
+    <Name>Банкiвський термiнал</Name>
+    <InitialCost>500</InitialCost>
+    <DepartmentId>4</DepartmentId>
+    <ResponsiblePersonId>5</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>11</Id>
+    <InventoryNumber>1402</InventoryNumber>
+    <Name>Касовий апарат</Name>
+    <InitialCost>700</InitialCost>
+    <DepartmentId>4</DepartmentId>
+    <ResponsiblePersonId>6</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>12</Id>
+    <InventoryNumber>1403</InventoryNumber>
+    <Name>Калькулятор офiсний</Name>
+    <InitialCost>50</InitialCost>
+    <DepartmentId>4</DepartmentId>
+    <ResponsiblePersonId>6</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>13</Id>
+    <InventoryNumber>1501</InventoryNumber>
+    <Name>Вантажiвка велика</Name>
+    <InitialCost>20000</InitialCost>
+    <DepartmentId>5</DepartmentId>
+    <ResponsiblePersonId>7</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>14</Id>
+    <InventoryNumber>1502</InventoryNumber>
+    <Name>Складськi стелажi</Name>
+    <InitialCost>1000</InitialCost>
+    <DepartmentId>5</DepartmentId>
+    <ResponsiblePersonId>7</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>15</Id>
+    <InventoryNumber>1503</InventoryNumber>
+    <Name>Палетнi стiйки</Name>
+    <InitialCost>800</InitialCost>
+    <DepartmentId>5</DepartmentId>
+    <ResponsiblePersonId>8</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>16</Id>
+    <InventoryNumber>1206</InventoryNumber>
+    <Name>Копiр Xerox</Name>
+    <InitialCost>600</InitialCost>
+    <DepartmentId>2</DepartmentId>
+    <ResponsiblePersonId>8</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>17</Id>
+    <InventoryNumber>1204</InventoryNumber>
+    <Name>Мультимедiйний проектор</Name>
+    <InitialCost>1000</InitialCost>
+    <DepartmentId>2</DepartmentId>
+    <ResponsiblePersonId>9</ResponsiblePersonId>
+  </Asset>
+  <Asset>
+    <Id>18</Id>
+    <InventoryNumber>1205</InventoryNumber>
+    <Name>Вантажний електрокар</Name>
+    <InitialCost>5000</InitialCost>
+    <DepartmentId>5</DepartmentId>
+    <ResponsiblePersonId>10</ResponsiblePersonId>
   </Asset>
 </Assets>

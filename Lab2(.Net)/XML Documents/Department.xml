@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Departments>
+<?xml version="1.0" encoding="utf-8"?>
+<Departments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Department>
     <Id>1</Id>
     <DepartmentName>Виробничий пiдроздiл</DepartmentName>
@@ -7,5 +7,17 @@
   <Department>
     <Id>2</Id>
     <DepartmentName>Адмiнiстративний пiдроздiл</DepartmentName>
+  </Department>
+  <Department>
+    <Id>3</Id>
+    <DepartmentName>Технiчний пiдроздiл</DepartmentName>
+  </Department>
+  <Department>
+    <Id>4</Id>
+    <DepartmentName>Фiнансовий пiдроздiл</DepartmentName>
+  </Department>
+  <Department>
+    <Id>5</Id>
+    <DepartmentName>Логiстичний пiдроздiл</DepartmentName>
   </Department>
 </Departments>

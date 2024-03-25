@@ -19,6 +19,11 @@ namespace Lab2_.Net_.Models
             Date = date;
         }
 
+        public AssetDocument()
+        {
+            
+        }
+
         public static AssetDocument CreateAssetDocument()
         {
             int assetId, documentId, year, month, day;

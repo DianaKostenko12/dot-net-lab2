@@ -21,6 +21,10 @@ namespace Lab2_.Net_.Models
             Phone = phone;
         }
 
+        public ResponsiblePerson()
+        {
+            
+        }
         public static ResponsiblePerson CreateResponsiblePerson()
         {
             int id;

@@ -48,7 +48,7 @@ namespace Lab2_.Net_
                     new Document(8, "Звiт про ремонт основних засобiв"),
                     new Document(9, "Довiдка про стан основних засобiв"),
         };
-        public List<ResponsiblePerson> ResponsiblePersons = new List<ResponsiblePerson>
+        public List<ResponsiblePerson> responsiblePersons = new List<ResponsiblePerson>
         {
                     new ResponsiblePerson(3, "Петро", "Сидоров", "+380993456789"),
                     new ResponsiblePerson(4, "Олена", "Коваленко", "+380994567890"),

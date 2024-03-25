@@ -93,6 +93,35 @@ namespace Lab2_.Net_.AddXMLDocument
                     formatter.Serialize(fs, existingDepartments);
                 }
             }
+
+            Console.WriteLine("Об'єкти успішно додані");
+        }
+
+        public void ReturnAllDepartments()
+        {
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(_dirPath);
+
+            XmlElement? xRoot = xDoc.DocumentElement;
+            if (xRoot != null)
+            {
+                foreach (XmlElement xnode in xRoot)
+                {
+                    foreach (XmlNode childnode in xnode.ChildNodes)
+                    {
+                        if (childnode.Name == "Id")
+                        {
+                            Console.WriteLine($"Id: {childnode.InnerText}");
+                        }
+
+                        if (childnode.Name == "DepartmentName")
+                        {
+                            Console.WriteLine($"Назва відділу: {childnode.InnerText}");
+                        }
+                    }
+                    Console.WriteLine();
+                }
+            }
         }
     }
 }

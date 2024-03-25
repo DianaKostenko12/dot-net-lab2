@@ -1,11 +1,39 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Documents>
+<?xml version="1.0" encoding="utf-8"?>
+<Documents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Document>
     <Id>1</Id>
     <DocumentName>Акт приймання-передачi</DocumentName>
   </Document>
   <Document>
     <Id>2</Id>
-    <DepartmentName>Акт списання основних засобiв</DepartmentName>
+    <DocumentName>Акт списання основних засобiв</DocumentName>
+  </Document>
+  <Document>
+    <Id>3</Id>
+    <DocumentName>Акт приймання на облiк основних засобiв</DocumentName>
+  </Document>
+  <Document>
+    <Id>4</Id>
+    <DocumentName>Прибуткова накладна на основний засiб</DocumentName>
+  </Document>
+  <Document>
+    <Id>5</Id>
+    <DocumentName>Акт перемiщення основних засобiв мiж пiдроздiлами</DocumentName>
+  </Document>
+  <Document>
+    <Id>6</Id>
+    <DocumentName>Акт введення в експлуатацiю нового основного засобу</DocumentName>
+  </Document>
+  <Document>
+    <Id>7</Id>
+    <DocumentName>Акт зняття з експлуатацiї основного засобу</DocumentName>
+  </Document>
+  <Document>
+    <Id>8</Id>
+    <DocumentName>Звiт про ремонт основних засобiв</DocumentName>
+  </Document>
+  <Document>
+    <Id>9</Id>
+    <DocumentName>Довiдка про стан основних засобiв</DocumentName>
   </Document>
 </Documents>

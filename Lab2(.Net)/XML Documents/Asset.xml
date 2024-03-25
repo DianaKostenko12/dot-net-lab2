@@ -2,6 +2,8 @@
 <Assets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Asset>
     <Id>1</Id>
+    <InventoryNumber>1101</InventoryNumber>
+    <Name>Верстат токарний</Name>
     <InitialCost>1500</InitialCost>
     <DepartmentId>1</DepartmentId>
     <ResponsiblePersonId>1</ResponsiblePersonId>

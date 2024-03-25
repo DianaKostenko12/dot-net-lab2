@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ResponsiblePersons>
+<?xml version="1.0" encoding="utf-8"?>
+<ResponsiblePersons xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ResponsiblePerson>
     <Id>1</Id>
     <Name>Iван</Name>
@@ -11,5 +11,53 @@
     <Name>Марiя</Name>
     <Surname>Iванова</Surname>
     <Phone>+380992345678</Phone>
+  </ResponsiblePerson>
+  <ResponsiblePerson>
+    <Id>3</Id>
+    <Name>Петро</Name>
+    <Surname>Сидоров</Surname>
+    <Phone>+380993456789</Phone>
+  </ResponsiblePerson>
+  <ResponsiblePerson>
+    <Id>4</Id>
+    <Name>Олена</Name>
+    <Surname>Коваленко</Surname>
+    <Phone>+380994567890</Phone>
+  </ResponsiblePerson>
+  <ResponsiblePerson>
+    <Id>5</Id>
+    <Name>Андрiй</Name>
+    <Surname>Бондаренко</Surname>
+    <Phone>+380995678901</Phone>
+  </ResponsiblePerson>
+  <ResponsiblePerson>
+    <Id>6</Id>
+    <Name>Наталiя</Name>
+    <Surname>Мороз</Surname>
+    <Phone>+380996789012</Phone>
+  </ResponsiblePerson>
+  <ResponsiblePerson>
+    <Id>7</Id>
+    <Name>Сергiй</Name>
+    <Surname>Поляков</Surname>
+    <Phone>+380997890123</Phone>
+  </ResponsiblePerson>
+  <ResponsiblePerson>
+    <Id>8</Id>
+    <Name>Оксана</Name>
+    <Surname>Шевченко</Surname>
+    <Phone>+380998901234</Phone>
+  </ResponsiblePerson>
+  <ResponsiblePerson>
+    <Id>9</Id>
+    <Name>Вiталiй</Name>
+    <Surname>Козлов</Surname>
+    <Phone>+380999012345</Phone>
+  </ResponsiblePerson>
+  <ResponsiblePerson>
+    <Id>10</Id>
+    <Name>Юлiя</Name>
+    <Surname>Семенова</Surname>
+    <Phone>+380999123456</Phone>
   </ResponsiblePerson>
 </ResponsiblePersons>

@@ -16,6 +16,11 @@ namespace Lab2_.Net_.Models
             DocumentName = documentName;
         }
 
+        public Document()
+        {
+            
+        }
+
         public static Document CreateDocument()
         {
             int documentId;

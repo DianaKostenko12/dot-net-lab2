@@ -42,7 +42,7 @@ namespace Lab2_.Net_.AddXMLDocument
                 writer.Flush();
             }
 
-            Console.WriteLine("XML файл успішно створений");
+            Console.WriteLine("XML файл успiшно створений");
         }
 
         public void AddXmlElement(Document document)
@@ -59,7 +59,7 @@ namespace Lab2_.Net_.AddXMLDocument
                 xdoc.Save(_dirPath);
             }
 
-            Console.WriteLine("XML елемент успішно доданий");
+            Console.WriteLine("XML елемент успiшно доданий");
         }
 
         public void AddCollection()
@@ -79,23 +79,20 @@ namespace Lab2_.Net_.AddXMLDocument
                 existingDocuments = formatter.Deserialize(fs) as List<Document>;
             }
 
+            existingDocuments.RemoveAll(d => true); // Видалення всіх документів
+
             foreach (var document in _dataFilling.documents)
             {
-                if (!existingDocuments.Any(a => a.Id == document.Id))
-                {
-                    newDocumentList.Add(document);
-                }
+                newDocumentList.Add(document);
             }
 
-            if (newDocumentList.Count > 0)
+            using (FileStream fs = new FileStream(_dirPath, FileMode.Create))
             {
-                using (FileStream fs = new FileStream(_dirPath, FileMode.Create))
-                {
-                    existingDocuments.AddRange(newDocumentList);
-                    formatter.Serialize(fs, existingDocuments);
-                }
+                formatter.Serialize(fs, newDocumentList);
             }
-            Console.WriteLine("Об'єкти успішно додані");
+
+            Console.WriteLine("Об'єкти успiшно доданi");
+
         }
 
         public void ReturnAllDocuments()

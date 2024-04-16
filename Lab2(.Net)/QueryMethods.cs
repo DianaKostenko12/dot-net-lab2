@@ -47,10 +47,10 @@ namespace Lab2_.Net_
 
             var q2 = from asset in assetsdoc.Descendants("Asset")
                      join department in departmentsDoc.Descendants("Department") on (int)asset.Element("DepartmentId") equals (int)department.Element("Id")
-                     where (string)department.Element("DepartmentName") == "Виробничий пiдроздiл"
+                     where (string)department.Element("DepartmentName") == "Канцелярiя"
                      select new { Name = (string)asset.Element("Name"), DepartmentName = (string)department.Element("DepartmentName") };
 
-            Console.WriteLine("Засоби, якi належать вiддiлу \"Виробничий пiдроздiл\"");
+            Console.WriteLine("Засоби, якi належать вiддiлу \"Канцелярія\"");
 
             if (q2.Any())
             {
@@ -61,7 +61,7 @@ namespace Lab2_.Net_
             }
             else
             {
-                Console.WriteLine("Немає засобiв, якi належать вiддiлу \"Виробничий пiдроздiл\"");
+                Console.WriteLine("Немає засобiв, якi належать вiддiлу \"Канцелярія\"");
             }
         }
 

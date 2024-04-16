@@ -40,7 +40,7 @@ namespace Lab2_.Net_.AddXMLDocument
                 writer.Flush();
             }
 
-            Console.WriteLine("XML файл успішно створений");
+            Console.WriteLine("XML файл успiшно створений");
         }
 
         public void AddXMLElement(Department department)
@@ -57,7 +57,7 @@ namespace Lab2_.Net_.AddXMLDocument
                 xdoc.Save(_dirPath);
             }
 
-            Console.WriteLine("XML елемент успішно доданий");
+            Console.WriteLine("XML елемент успiшно доданий");
         }
 
         public void AddCollection()
@@ -77,24 +77,20 @@ namespace Lab2_.Net_.AddXMLDocument
                 existingDepartments = formatter.Deserialize(fs) as List<Department>;
             }
 
+            existingDepartments.RemoveAll(d => true); 
+
             foreach (var department in _dataFilling.departments)
             {
-                if (!existingDepartments.Any(a => a.Id == department.Id))
-                {
-                    newDepartmentList.Add(department);
-                }
+                newDepartmentList.Add(department);
             }
 
-            if (newDepartmentList.Count > 0)
+            using (FileStream fs = new FileStream(_dirPath, FileMode.Create))
             {
-                using (FileStream fs = new FileStream(_dirPath, FileMode.Create))
-                {
-                    existingDepartments.AddRange(newDepartmentList);
-                    formatter.Serialize(fs, existingDepartments);
-                }
+                formatter.Serialize(fs, newDepartmentList);
             }
 
-            Console.WriteLine("Об'єкти успішно додані");
+            Console.WriteLine("Об'єкти успiшно доданi");
+
         }
 
         public void ReturnAllDepartments()
@@ -116,7 +112,7 @@ namespace Lab2_.Net_.AddXMLDocument
 
                         if (childnode.Name == "DepartmentName")
                         {
-                            Console.WriteLine($"Назва відділу: {childnode.InnerText}");
+                            Console.WriteLine($"Назва вiддiлу: {childnode.InnerText}");
                         }
                     }
                     Console.WriteLine();

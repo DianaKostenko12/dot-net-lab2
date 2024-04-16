@@ -43,10 +43,9 @@ namespace Lab2_.Net_.AddXMLDocument
                 writer.WriteEndElement(); 
                 writer.WriteEndDocument();
                 writer.Flush();
-
             }
 
-            Console.WriteLine("XML файл успішно створений");
+            Console.WriteLine("XML файл успiшно створений");
         }
 
         public void AddXMLElement(Asset asset)
@@ -67,7 +66,7 @@ namespace Lab2_.Net_.AddXMLDocument
                 xdoc.Save(_dirPath);
             }
 
-            Console.WriteLine("XML елемент успішно доданий");
+            Console.WriteLine("XML елемент успiшно доданий");
         }
 
         public void AddCollection()
@@ -87,21 +86,16 @@ namespace Lab2_.Net_.AddXMLDocument
                 existingAssets = formatter.Deserialize(fs) as List<Asset>;
             }
 
+            existingAssets.RemoveAll(a => true); 
+
             foreach (var asset in _dataFilling.assets)
             {
-                if (!existingAssets.Any(a => a.Id == asset.Id))
-                {
-                    newAssetList.Add(asset);
-                }
+                newAssetList.Add(asset);
             }
 
-            if (newAssetList.Count > 0)
+            using (FileStream fs = new FileStream(_dirPath, FileMode.Create))
             {
-                using (FileStream fs = new FileStream(_dirPath, FileMode.Create))
-                {
-                    existingAssets.AddRange(newAssetList);
-                    formatter.Serialize(fs, existingAssets);
-                }
+                formatter.Serialize(fs, newAssetList);
             }
         }
 
@@ -124,7 +118,7 @@ namespace Lab2_.Net_.AddXMLDocument
 
                         if (childnode.Name == "InventoryNumber")
                         {
-                            Console.WriteLine($"Інвентарний номер: {childnode.InnerText}");
+                            Console.WriteLine($"iнвентарний номер: {childnode.InnerText}");
                         }
 
                         if (childnode.Name == "Name")
@@ -134,17 +128,17 @@ namespace Lab2_.Net_.AddXMLDocument
 
                         if (childnode.Name == "InitialCost")
                         {
-                            Console.WriteLine($"Первісна вартість: {childnode.InnerText}");
+                            Console.WriteLine($"Первiсна вартiсть: {childnode.InnerText}");
                         }
 
                         if (childnode.Name == "DepartmentId")
                         {
-                            Console.WriteLine($"Id відділу: {childnode.InnerText}");
+                            Console.WriteLine($"Id вiддiлу: {childnode.InnerText}");
                         }
 
                         if (childnode.Name == "ResponsiblePersonId")
                         {
-                            Console.WriteLine($"Id відповідальної особи: {childnode.InnerText}");
+                            Console.WriteLine($"Id вiдповiдальної особи: {childnode.InnerText}");
                         }
                     }
                     Console.WriteLine();

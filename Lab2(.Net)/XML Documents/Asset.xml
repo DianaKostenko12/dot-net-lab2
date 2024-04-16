@@ -138,7 +138,7 @@
   </Asset>
   <Asset>
     <Id>18</Id>
-    <InventoryNumber>1205</InventoryNumber>
+    <InventoryNumber>1504</InventoryNumber>
     <Name>Вантажний електрокар</Name>
     <InitialCost>5000</InitialCost>
     <DepartmentId>5</DepartmentId>

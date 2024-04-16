@@ -44,7 +44,7 @@ namespace Lab2_.Net_.AddXMLDocument
                 writer.Flush();
             }
 
-            Console.WriteLine("XML файл успішно створений");
+            Console.WriteLine("XML файл успiшно створений");
         }
 
         public void AddXMLElement(AssetDocument assetDocument)
@@ -62,7 +62,7 @@ namespace Lab2_.Net_.AddXMLDocument
                 xdoc.Save(_dirPath);
             }
 
-            Console.WriteLine("XML елемент успішно доданий");
+            Console.WriteLine("XML елемент успiшно доданий");
         }
 
         public void AddCollection()
@@ -78,17 +78,22 @@ namespace Lab2_.Net_.AddXMLDocument
             using (FileStream fs = new FileStream(_dirPath, FileMode.OpenOrCreate))
             {
                 existingAssetDocuments = formatter.Deserialize(fs) as List<AssetDocument>;
-                
             }
-            
+
+            if (existingAssetDocuments == null)
+            {
+                existingAssetDocuments = new List<AssetDocument>();
+            }
+
+            existingAssetDocuments.AddRange(_dataFilling.assetDocuments);
+
             using (FileStream fs = new FileStream(_dirPath, FileMode.Create))
             {
-                existingAssetDocuments.AddRange(_dataFilling.assetDocuments);
-                if(existingAssetDocuments != null)
-                {
-                    formatter.Serialize(fs, existingAssetDocuments);
-                }
+                formatter.Serialize(fs, existingAssetDocuments);
             }
+
+            Console.WriteLine("Документи майна успiшно оновлено");
+
         }
         public void ReturnAllAssetDocuments()
         {
@@ -114,7 +119,7 @@ namespace Lab2_.Net_.AddXMLDocument
 
                         if (childnode.Name == "Date")
                         {
-                            Console.WriteLine($"Дата проведення операції: {childnode.InnerText}");
+                            Console.WriteLine($"Дата проведення операцiї: {childnode.InnerText}");
                         }
                     }
                     Console.WriteLine();

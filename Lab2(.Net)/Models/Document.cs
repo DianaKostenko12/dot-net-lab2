@@ -30,11 +30,11 @@ namespace Lab2_.Net_.Models
                 Console.WriteLine("Введiть ID документу:");
                 if (!int.TryParse(Console.ReadLine(), out documentId) || documentId <= 0)
                 {
-                    Console.WriteLine("Неправильний ID документу. Має бути додатним цілим числом.");
+                    Console.WriteLine("Неправильний ID документу. Має бути додатним цiлим числом.");
                     continue;
                 }
 
-                Console.WriteLine("Ведіть назву докумену:");
+                Console.WriteLine("Ведiть назву докумену:");
                 documentName = Console.ReadLine();
                 break;
             } while (true);

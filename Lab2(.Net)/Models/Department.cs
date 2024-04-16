@@ -27,14 +27,14 @@ namespace Lab2_.Net_.Models
             string departmentName;
             do
             {
-                Console.WriteLine("Введiть ID відділу:");
+                Console.WriteLine("Введiть ID вiддiлу:");
                 if (!int.TryParse(Console.ReadLine(), out departmentId) || departmentId <= 0)
                 {
-                    Console.WriteLine("Неправильний ID відділу. Має бути додатним цілим числом.");
+                    Console.WriteLine("Неправильний ID вiддiлу. Має бути додатним цiлим числом.");
                     continue;
                 }
 
-                Console.WriteLine("Ведіть назву відділу:");
+                Console.WriteLine("Ведiть назву вiддiлу:");
                 departmentName = Console.ReadLine();
                 break;
             } while (true);

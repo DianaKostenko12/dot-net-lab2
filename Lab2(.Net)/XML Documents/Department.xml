@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Departments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Department>
     <Id>1</Id>
@@ -19,5 +19,9 @@
   <Department>
     <Id>5</Id>
     <DepartmentName>Логiстичний пiдроздiл</DepartmentName>
+  </Department>
+  <Department>
+    <Id>6</Id>
+    <DepartmentName>Канцелярiя</DepartmentName>
   </Department>
 </Departments>

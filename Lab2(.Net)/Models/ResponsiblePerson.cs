@@ -31,21 +31,21 @@ namespace Lab2_.Net_.Models
             string name, surname, phone;
             do
             {
-                Console.WriteLine("Введiть ID відповідальної персони:");
+                Console.WriteLine("Введiть ID вiдповiдальної персони:");
                 if (!int.TryParse(Console.ReadLine(), out id) || id <= 0)
                 {
-                    Console.WriteLine("Неправильний ID відповідальної персони. Має бути додатним цілим числом.");
+                    Console.WriteLine("Неправильний ID вiдповiдальної персони. Має бути додатним цiлим числом.");
                     continue;
                 }
 
-                Console.WriteLine("Ведіть ім'я відповідальної персони:");
+                Console.WriteLine("Ведiть iм'я вiдповiдальної персони:");
                 name = Console.ReadLine();
                 if (name == null)
                 {
                     Console.WriteLine("Некоретно введене значення");
                     continue;
                 }
-                Console.WriteLine("Ведіть прізвище відповідальної персони:");
+                Console.WriteLine("Ведiть прiзвище вiдповiдальної персони:");
                 surname = Console.ReadLine();
                 if (surname == null)
                 {
@@ -53,7 +53,7 @@ namespace Lab2_.Net_.Models
                     continue;
                 }
 
-                Console.WriteLine("Введіть номер телефону відповідальної персони");
+                Console.WriteLine("Введiть номер телефону вiдповiдальної персони");
                 phone = Console.ReadLine();
                 if (phone == null)
                 {

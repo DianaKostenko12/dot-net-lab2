@@ -33,35 +33,35 @@ namespace Lab2_.Net_.Models
                 Console.WriteLine("Введiть ID основного засобу:");
                 if (!int.TryParse(Console.ReadLine(), out assetId) || assetId <= 0)
                 {
-                    Console.WriteLine("Неправильний ID основного засобу. Має бути додатним цілим числом.");
+                    Console.WriteLine("Неправильний ID основного засобу. Має бути додатним цiлим числом.");
                     continue;
                 }
 
                 Console.WriteLine("Введiть ID документу:");
                 if (!int.TryParse(Console.ReadLine(), out documentId) || documentId <= 0)
                 {
-                    Console.WriteLine("Неправильний ID документу. Має бути додатним цілим числом.");
+                    Console.WriteLine("Неправильний ID документу. Має бути додатним цiлим числом.");
                     continue;
                 }
 
-                Console.WriteLine("Введiть рік проведення операції:");
+                Console.WriteLine("Введiть рiк проведення операцiї:");
                 if (!int.TryParse(Console.ReadLine(), out year) || year <= 0)
                 {
-                    Console.WriteLine("Неправильно введений рік. Має бути додатним цілим числом.");
+                    Console.WriteLine("Неправильно введений рiк. Має бути додатним цiлим числом.");
                     continue;
                 }
 
-                Console.WriteLine("Введiть місяць проведення операції:");
+                Console.WriteLine("Введiть мiсяць проведення операцiї:");
                 if (!int.TryParse(Console.ReadLine(), out month) || month <= 0)
                 {
-                    Console.WriteLine("Неправильно введений місяць. Має бути додатним цілим числом.");
+                    Console.WriteLine("Неправильно введений мiсяць. Має бути додатним цiлим числом.");
                     continue;
                 }
 
-                Console.WriteLine("Введiть день проведення операції:");
+                Console.WriteLine("Введiть день проведення операцiї:");
                 if (!int.TryParse(Console.ReadLine(), out day) || day <= 0)
                 {
-                    Console.WriteLine("Неправильно введений день. Має бути додатним цілим числом.");
+                    Console.WriteLine("Неправильно введений день. Має бути додатним цiлим числом.");
                     continue;
                 }
                 

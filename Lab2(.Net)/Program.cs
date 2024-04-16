@@ -27,22 +27,22 @@ namespace Lab2_.Net_
             do
             {
                 Console.Clear();
-                Console.WriteLine("Що ви хочете зробити? \n" +
+                Console.WriteLine("Що ви бажаєте зробити? \n" +
                     "\n1-Додати новий об'єкт Asset до XML документу?" +
                     "\n2-Додати новий об'єкт Department до XML документу" +
                     "\n3-Додати новий об'єкт Document до XML документу" +
                     "\n4-Додати новий об'єкт ResponsiblePerson до XML документу" +
                     "\n5-Додати новий об'єкт AssetDocument до XML документу" +
-                    "\n6-Додати список об'єктів Asset до XML документу" +
-                    "\n7-Додати список об'єктів Department до XML документу" +
-                    "\n8-Додати список об'єктів Document до XML документу" +
-                    "\n9-Додати список об'єктів ResponsiblePerson до XML документу" +
-                    "\n10-Додати список об'єктів AssetDocument до XML документу" +
-                    "\n11- Вивести список об'єктів Assets з XML файлу" +
-                    "\n12- Вивести список об'єктів Departments з XML файлу" +
-                    "\n13- Вивести список об'єктів Documents з XML файлу" +
-                    "\n14- Вивести список об'єктів ResponsiblePersons з XML файлу" +
-                    "\n15- Вивести список об'єктів AssetDocuments з XML файлу" +
+                    "\n6-Додати список об'єктiв Asset до XML документу" +
+                    "\n7-Додати список об'єктiв Department до XML документу" +
+                    "\n8-Додати список об'єктiв Document до XML документу" +
+                    "\n9-Додати список об'єктiв ResponsiblePerson до XML документу" +
+                    "\n10-Додати список об'єктiв AssetDocument до XML документу" +
+                    "\n11- Вивести список об'єктiв Assets з XML файлу" +
+                    "\n12- Вивести список об'єктiв Departments з XML файлу" +
+                    "\n13- Вивести список об'єктiв Documents з XML файлу" +
+                    "\n14- Вивести список об'єктiв ResponsiblePersons з XML файлу" +
+                    "\n15- Вивести список об'єктiв AssetDocuments з XML файлу" +
                     "\n16 - Показати запити над даними ");
 
                 int input = Convert.ToInt32(Console.ReadLine());
@@ -109,7 +109,7 @@ namespace Lab2_.Net_
                 if (input == 16)
                 {
                     Console.Clear();
-                    Console.WriteLine("Оберіть запит який хочете виконати: \n" +
+                    Console.WriteLine("Оберiть запит який хочете виконати: \n" +
                         "\n1 - Отримати список вiдповiдальних персон id, яких бiльше 3, але менше 8" +
                         "\n2 - Отримати засоби, якi належать вiддiлу \"Виробничий пiдроздiл\"" +
                         "\n3 - Групувати засоби за вiддiлами" +

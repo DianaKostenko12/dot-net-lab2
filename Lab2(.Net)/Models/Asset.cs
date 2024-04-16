@@ -39,19 +39,19 @@ namespace Lab2_.Net_.Models
                 Console.WriteLine("Введiть ID основного засобу:");
                 if (!int.TryParse(Console.ReadLine(), out assetId) || assetId <= 0)
                 {
-                    Console.WriteLine("Неправильний ID основного засобу. Має бути додатним цілим числом.");
+                    Console.WriteLine("Неправильний ID основного засобу. Має бути додатним цiлим числом.");
                     continue;
                 }
 
-                Console.WriteLine("Введіть інвентарний номер основного засобу:");
+                Console.WriteLine("Введiть iнвентарний номер основного засобу:");
                 inventoryNumberStr = Console.ReadLine();
                 if (!int.TryParse(inventoryNumberStr, out inventoryNumber) || inventoryNumber <= 0)
                 {
-                    Console.WriteLine("Неправильний інвентарний номер основного засобу. Має бути додатним цілим числом.");
+                    Console.WriteLine("Неправильний iнвентарний номер основного засобу. Має бути додатним цiлим числом.");
                     continue;
                 }
 
-                Console.WriteLine("Ведіть назву основного засобу:");
+                Console.WriteLine("Ведiть назву основного засобу:");
                 assetName = Console.ReadLine();
                 if (assetName == null)
                 {
@@ -59,24 +59,24 @@ namespace Lab2_.Net_.Models
                     continue;
                 }
 
-                Console.WriteLine("Введіть початкову вартість основного засобу:");
+                Console.WriteLine("Введiть початкову вартiсть основного засобу:");
                 if (!decimal.TryParse(Console.ReadLine(), out initialCost) || initialCost <= 0)
                 {
-                    Console.WriteLine("Неправильно введена первинна вартість. Має бути додатним числом.");
+                    Console.WriteLine("Неправильно введена первинна вартiсть. Має бути додатним числом.");
                     continue;
                 }
 
-                Console.WriteLine("Введiть ID відділу:");
+                Console.WriteLine("Введiть ID вiддiлу:");
                 if (!int.TryParse(Console.ReadLine(), out departmentId) || departmentId <= 0)
                 {
-                    Console.WriteLine("Неправильний ID відділу. Має бути додатним цілим числом.");
+                    Console.WriteLine("Неправильний ID вiддiлу. Має бути додатним цiлим числом.");
                     continue;
                 }
 
-                Console.WriteLine("Введiть ID відповідальної особи:");
+                Console.WriteLine("Введiть ID вiдповiдальної особи:");
                 if (!int.TryParse(Console.ReadLine(), out responsiblePersonId) || responsiblePersonId <= 0)
                 {
-                    Console.WriteLine("Неправильний ID відповідальної особи. Має бути додатним цілим числом.");
+                    Console.WriteLine("Неправильний ID вiдповiдальної особи. Має бути додатним цiлим числом.");
                     continue;
                 }
 

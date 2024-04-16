@@ -31,7 +31,7 @@ namespace Lab2_.Net_.AddXMLDocument
             {
                 writer.WriteStartDocument();
                 writer.WriteStartElement("ResponsiblePersons");
-                Console.WriteLine("Введiть ID відповідальної персони:");
+                Console.WriteLine("Введiть ID вiдповiдальної персони:");
 
                 writer.WriteStartElement("ResponsiblePerson");
                 writer.WriteElementString("Id", person.Id.ToString());
@@ -45,7 +45,7 @@ namespace Lab2_.Net_.AddXMLDocument
                 writer.Flush();
             }
 
-            Console.WriteLine("XML файл успішно створений");
+            Console.WriteLine("XML файл успiшно створений");
         }
 
         public void AddXmlElement(ResponsiblePerson person)
@@ -64,7 +64,7 @@ namespace Lab2_.Net_.AddXMLDocument
                 xdoc.Save(_dirPath);
             }
 
-            Console.WriteLine("XML елемент успішно");
+            Console.WriteLine("XML елемент успiшно");
         }
 
         public void AddCollection()
@@ -84,24 +84,20 @@ namespace Lab2_.Net_.AddXMLDocument
                 existingResponsiblePersons = formatter.Deserialize(fs) as List<ResponsiblePerson>;
             }
 
+            existingResponsiblePersons.RemoveAll(rp => true); // Видалення всіх відповідальних осіб
+
             foreach (var responsiblePerson in _dataFilling.responsiblePersons)
             {
-                if (!existingResponsiblePersons.Any(a => a.Id == responsiblePerson.Id))
-                {
-                    newResponsiblePersonList.Add(responsiblePerson);
-                }
+                newResponsiblePersonList.Add(responsiblePerson);
             }
 
-            if (newResponsiblePersonList.Count > 0)
+            using (FileStream fs = new FileStream(_dirPath, FileMode.Create))
             {
-                using (FileStream fs = new FileStream(_dirPath, FileMode.Create))
-                {
-                    existingResponsiblePersons.AddRange(newResponsiblePersonList);
-                    formatter.Serialize(fs, existingResponsiblePersons);
-                }
+                formatter.Serialize(fs, newResponsiblePersonList);
             }
 
-            Console.WriteLine("Об'єкти успішно додані");
+            Console.WriteLine("Об'єкти успiшно доданi");
+
         }
 
         public void ReturnAllResponsiblePersons()
@@ -123,17 +119,17 @@ namespace Lab2_.Net_.AddXMLDocument
 
                         if (childnode.Name == "Name")
                         {
-                            Console.WriteLine($"Ім'я відповідальної персони: {childnode.InnerText}");
+                            Console.WriteLine($"iм'я вiдповiдальної персони: {childnode.InnerText}");
                         }
 
                         if (childnode.Name == "Surname")
                         {
-                            Console.WriteLine($"Прізвище відповідальної персони: {childnode.InnerText}");
+                            Console.WriteLine($"Прiзвище вiдповiдальної персони: {childnode.InnerText}");
                         }
 
                         if (childnode.Name == "Phone")
                         {
-                            Console.WriteLine($"Телефон відповідальної персони: {childnode.InnerText}");
+                            Console.WriteLine($"Телефон вiдповiдальної персони: {childnode.InnerText}");
                         }
                     }
                     Console.WriteLine();

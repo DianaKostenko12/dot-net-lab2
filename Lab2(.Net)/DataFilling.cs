@@ -11,6 +11,7 @@ namespace Lab2_.Net_
     {
         public List<Asset> assets = new List<Asset>
         {
+                    new Asset(1, "1101", "Верстат токарний", 1500, 1, 1),
                     new Asset(2, "1102", "Прес гiдравлiчний", 2000, 1, 1),
                     new Asset(3, "1103", "Конвеєр лiнiйний", 3000, 1, 2),
                     new Asset(4, "1201", "Комп'ютер офiсний", 800, 2, 2),
@@ -27,11 +28,12 @@ namespace Lab2_.Net_
                     new Asset(15, "1503", "Палетнi стiйки", 800, 5, 8),
                     new Asset(16, "1206", "Копiр Xerox", 600, 2, 8),
                     new Asset(17, "1204", "Мультимедiйний проектор", 1000, 2, 9),
-                    new Asset(18, "1205", "Вантажний електрокар", 5000, 5, 10),
+                    new Asset(18, "1504", "Вантажний електрокар", 5000, 5, 10),
         };
 
         public List<Department> departments = new List<Department>
         {
+                  new Department(1, "Виробничий пiдроздiл"),
                   new Department(2, "Адмiнiстративний пiдроздiл"),
                   new Department(3, "Технiчний пiдроздiл"),
                   new Department(4, "Фiнансовий пiдроздiл"),
@@ -40,6 +42,8 @@ namespace Lab2_.Net_
 
         public List<Document> documents = new List<Document>
         {
+                    new Document(1, "Акт приймання-передачi"),
+                    new Document(2, "Акт списання основних засобiв"),
                     new Document(3, "Акт приймання на облiк основних засобiв"),
                     new Document(4, "Прибуткова накладна на основний засiб"),
                     new Document(5, "Акт перемiщення основних засобiв мiж пiдроздiлами"),
@@ -50,6 +54,8 @@ namespace Lab2_.Net_
         };
         public List<ResponsiblePerson> responsiblePersons = new List<ResponsiblePerson>
         {
+                    new ResponsiblePerson(1, "Iван", "Петров", "+380991234567"),
+                    new ResponsiblePerson(2, "Марiя", "Iванова", "+380992345678"),
                     new ResponsiblePerson(3, "Петро", "Сидоров", "+380993456789"),
                     new ResponsiblePerson(4, "Олена", "Коваленко", "+380994567890"),
                     new ResponsiblePerson(5, "Андрiй", "Бондаренко", "+380995678901"),
@@ -85,7 +91,7 @@ namespace Lab2_.Net_
                     new AssetDocument(16, 5, new DateTime(2024, 4, 12)),
                     new AssetDocument(17, 4, new DateTime(2024, 5, 30)),
                     new AssetDocument(18, 6, new DateTime(2024, 6, 8)),
-                    new AssetDocument(18, 9, new DateTime(2024, 7, 16)),
+                    new AssetDocument(18, 9, new DateTime(2024, 7, 16))
         };
     }
 }
